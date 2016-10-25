@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/Garethp/ScreepsAutocomplete.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/Garethp/ScreepsAutocomplete.git",
+        "spec": "git+https://github.com/Garethp/ScreepsAutocomplete.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:Garethp/ScreepsAutocomplete.git",
+          "sshUrl": "git+ssh://git@github.com/Garethp/ScreepsAutocomplete.git",
+          "httpsUrl": "git+https://github.com/Garethp/ScreepsAutocomplete.git",
+          "gitUrl": "git://github.com/Garethp/ScreepsAutocomplete.git",
+          "shortcut": "github:Garethp/ScreepsAutocomplete",
+          "directUrl": "https://raw.githubusercontent.com/Garethp/ScreepsAutocomplete/master/package.json"
+        }
+      },
+      "D:\\Projects\\ScreepsNewPart"
+    ]
+  ],
+  "_from": "git+https://github.com/Garethp/ScreepsAutocomplete.git",
+  "_id": "ScreepsAutocomplete@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ScreepsAutocomplete",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/Garethp/ScreepsAutocomplete.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/Garethp/ScreepsAutocomplete.git",
+    "spec": "git+https://github.com/Garethp/ScreepsAutocomplete.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:Garethp/ScreepsAutocomplete.git",
+      "sshUrl": "git+ssh://git@github.com/Garethp/ScreepsAutocomplete.git",
+      "httpsUrl": "git+https://github.com/Garethp/ScreepsAutocomplete.git",
+      "gitUrl": "git://github.com/Garethp/ScreepsAutocomplete.git",
+      "shortcut": "github:Garethp/ScreepsAutocomplete",
+      "directUrl": "https://raw.githubusercontent.com/Garethp/ScreepsAutocomplete/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Garethp/ScreepsAutocomplete.git#ec69ac9abeb7820bc1da9e92e5ffe6252abb9b8a",
+  "_shasum": "3d1c3e9c0a54dec7fba965e58ecb6be2702b9276",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/Garethp/ScreepsAutocomplete.git",
+  "_where": "D:\\Projects\\ScreepsNewPart",
+  "author": {
+    "name": "Garethp"
+  },
+  "bugs": {
+    "url": "https://github.com/Garethp/ScreepsAutocomplete/issues"
+  },
+  "dependencies": {},
+  "description": "IDE Autocomplete for Screeps",
+  "devDependencies": {},
+  "gitHead": "ec69ac9abeb7820bc1da9e92e5ffe6252abb9b8a",
+  "homepage": "https://github.com/Garethp/ScreepsAutocomplete#readme",
+  "keywords": [
+    "game",
+    "screeps"
+  ],
+  "license": "MIT",
+  "name": "ScreepsAutocomplete",
+  "optionalDependencies": {},
+  "readme": "Screeps Autocomplete\r\n====================\r\nThe purpose of this is to add screeps autocomplete to IDEs by creating a definition from the documents. People can then\r\nadd this project as a library in their IDE, and their IDE should be able to start autocompleting their code. Tested\r\nsomewhat in JetBrain's WebStorm\r\n\r\n## How to Install\r\n\r\n#### Webstorm (Or Other Jetbrains IDE's)\r\nThis can be done by quite simply copying the `ScreepsAutocomplete` folder in their project, and Webstorm should automatically\r\ndetect it and add it to the autocompletion\r\n###### Adding it as a library\r\nInstead of copying the `ScreepsAutocomplete` folder to each and every project folder, you can add it as a global library.\r\n\r\n* Create a new project in Webstorm if you don't already have one and open it.\r\n* In the menu bar at the top of the screen, navigate to `File` -> `Settings` -> `Languages & Frameworks` -> `JavaScript` -> `Libraries`\r\n* Click `Add`.\r\n* Name the Library whatever you want.\r\n* Set `Framework type` to custom, if it is not already so. `Version` can be left blank.\r\n* Change `Visibility` to `Global`.\r\n* Click the green plus sign to the right of the listbox below `Visibility`, then choose \"Attach Directories...\".\r\n* Navigate to the ScreepsAutocomplete folder, select the folder itself and click `OK`.\r\n* Click `OK` at the bottom of the \"Edit Library\" dialog.\r\n* Click the `Enabled` checkbox on the library you just created, make sure it's checked before continuing.\r\n* Click `OK` at the bottom of the \"Settings\" dialog.\r\n\r\nWebstorm should automatically detect the library and add it to the autocompletion.\r\n\r\n#### Visual Studio\r\nCopy the `ScreepsAutcompete` folder in to your project, then create a file called `_references.js`. Right click your newly\r\ncreated and empty file, and then select `Update JavaScript References`. The file should now be populated autocomplete should\r\nbe available.\r\n\r\n#### Sublime Text\r\nThere are two ways to enable Autocomplete in Sublime Text, both of them require installing a plugin through \r\n[`Package Control`](https://packagecontrol.io/installation), and copying `ScreepsAutocomplete` in to your project.\r\n\r\n * `TernJS` - Install `TernJS` through `Package Control`, restart Sublime Text and try `var room = new Room(); room.lookAt(x, y)` \r\n to see if Autocomplete is working. If not, try the next options\r\n \r\n * `SublimeCodeIntel` - Install `SublimeCodeIntel` through `Package Control`. Go to `Preferences > Package Settings > SublimeCodeIntel > Settings -- User`\r\n and copy the contents of `ScreepsAutocomplete/config/SublimeCodeIntel.json` in to the file that opens. Save and restart Sublime\r\n Text. After waiting for CodeIntel to process JavaScript, Autocomplete should be working\r\n \r\n#### Atom\r\nIntegration with Atom is done through use of the [`atom-ternjs`](https://github.com/tststs/atom-ternjs) package. Here's the steps\r\n\r\n * Copy `ScreepsAutocomplete` in to your project folder\r\n * Install the `atom-ternjs` package\r\n * Put the following in your `.tern-project` file\r\n```json\r\n{\r\n  \"ecmaVersion\": 6,\r\n  \"libs\": [],\r\n  \"loadEagerly\": [\r\n    \"ScreepsAutocomplete/**/*.js\"\r\n  ]\r\n}\r\n```\r\n * Restart and Enjoy",
+  "readmeFilename": "Readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garethp/ScreepsAutocomplete.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
